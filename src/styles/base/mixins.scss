@@ -1,0 +1,60 @@
+
+
+// exemplo de uso da função de calculo rem com mixin de media querie
+// .teste{
+//     margin: calculadora-rem-espaco(0, 0, 0, 0);
+//     @include media-max(1366px){
+//         margin: calculadora-rem-espaco(0, 0, 0, 0);
+//     }
+// }
+
+@mixin container-center($max-width: 1366px, $margin: 0 auto) {
+    max-width: $max-width;
+    margin: $margin;
+
+    @media screen and(max-width: 1366px) {
+        margin: 0 5%;
+    }
+}
+
+@function calculadora-rem-espaco($top: 0px, $right: 0px, $bottom: 0px, $left: 0px) {
+    $tamanhoRemTop: $top/16;
+    $tamanhoRemRight: $right/16;
+    $tamanhoRemBottom: $bottom/16;
+    $tamanhoRemLeft: $left/16;
+    @return $tamanhoRemTop+rem $tamanhoRemRight+rem $tamanhoRemBottom+rem $tamanhoRemLeft+rem;
+}
+
+@function calculadora-rem($font-size) {
+    $tamanhoRem: $font-size/16;
+    @return $tamanhoRem+rem;
+}
+
+@mixin configura-fonte($color, $font-family, $font-weight, $font-size, $text-transform: unset) {
+    color: $color;
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-size: calculadora-rem($font-size);
+    text-transform: $text-transform;
+}
+
+@mixin configura-icone($icon, $color, $size, $padding) {
+    content: $icon;
+    color: $color;
+    font-size: $size;
+    padding: $padding;
+    font-family: "icomoon";
+    font-style: normal;
+    display: inline-block;
+}
+
+@mixin media-max ($max-width) {
+    @media screen and (max-width: $max-width) {
+        @content;
+    }
+}
+@mixin media-min ($min-width) {
+    @media screen and (min-width: $min-width) {
+        @content;
+    }
+}

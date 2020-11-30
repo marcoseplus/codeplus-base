@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
+
+<head>
+
+    <vtex.cmc:seoHead />
+    <vtex:metaTags />
+    <vtex:template id="{{loja}}-styles" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+
+<body>
+
+    <!-- Chamada do cabeçalho da {{loja}} -->
+
+    <vtex:template id="{{loja}}-header" />
+
+    <main>
+
+        <section class="container-center accountPage">
+            <vtex.cmc:accountUserProfile />
+
+            <vtex.cmc:accountAddress />
+
+            <div class="orders-account">
+                <h1> Meus pedidos </h1>
+
+                <p>
+                    <a href="/account/orders"> Ir para os meus pedidos </a>
+                </p>
+        </section>
+
+    </main>
+
+    <!-- Chamada para o rodapé -->
+
+    <vtex:template id="{{loja}}-footer" />
+
+    <!-- Chamada para os scripts Js da {{loja}} -->
+
+    <vtex:template id="{{loja}}-scripts" />
+
+</body>
+
+</html>

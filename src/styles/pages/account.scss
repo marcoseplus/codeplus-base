@@ -1,0 +1,394 @@
+//passa o tipo de fonte da loja
+h1,h2,h3,h4,h5,h6,a,p,li,div,span,input,label,button{
+    font-family: $primaryFont;
+}
+
+//borda colorida
+.b--action-primary{
+    border-color: $borda-colorida;
+}
+
+//background color
+.bg-action-primary{
+    background-color: $bc-primary;
+}
+
+//botões do modal para sair do account
+.vtex-modal__confirmation{
+    span{
+        button{
+                background-color: $bc-cancel-exit-button; 
+                color: $color-cancel-exit-button; 
+            &:hover{
+                background-color: $hover-bc-cancel-exit-button;
+                color: $hover-color-cancel-exit-button;
+            }
+            &:active{
+                background-color: $bc-cancel-exit-button !important; 
+            }
+            div{
+                font-weight: 700 !important;
+                color: $color-cancel-exit-button;
+                    &:hover{
+                        font-weight: 700 !important;
+                        color: $hover-color-cancel-exit-button;
+                }
+            }
+        
+    }
+}
+    button{
+        background-color: $bc-exit-button; 
+        color: $color-exit-button; 
+        &:hover{
+            background-color: $hover-bc-exit-button;
+            color: $hover-color-exit-button;
+        }
+        &:active{
+            background-color: $bc-exit-button !important; 
+        }
+        div{
+            font-weight: 700;
+            color: $color-exit-button;
+            &:hover{
+                font-weight: 700;
+                color: $hover-color-exit-button;
+            }
+        }
+    }
+}
+
+//botão adicionar cartão
+.vtex-pageHeader__children {
+    button{
+        background-color: $bc-card-button; 
+        color: $color-card-button; 
+        &:hover{
+            background-color: $hover-bc-card-button;
+            color: $hover-color-card-button;
+        }
+        &:active{
+            background-color: $bc-card-button; 
+        }
+        span{
+            font-weight: 700 !important;
+            color: $color-card-button;
+            &:hover{
+                font-weight: 700 !important;
+                color: $hover-color-card-button;
+            }
+        }
+    }
+}
+
+//botao salvar cartão
+.flex-ns{
+    button{
+        &:first-of-type{
+            background-color: $bc-card-button; 
+            color: $color-card-button; 
+            &:hover{
+                background-color: $hover-bc-card-button;
+                color: $hover-color-card-button;
+            }
+            &:active{
+                background-color: $bc-card-button; 
+            }
+            span{
+                font-weight: 700 !important;
+                color: $color-card-button;
+                &:hover{
+                    font-weight: 700 !important;
+                    color: $hover-color-card-button;
+                }
+            }
+        }
+    }
+}
+
+//botoes de dados pessoais
+.vtex-account__page-body{
+    button{
+        background-color: $bc-action-button; 
+        color: $color-action-button; 
+        &:hover{
+            background-color: $hover-bc-action-button;
+            color: $hover-color-action-button;
+        }
+        &:active{
+            background-color: $bc-action-button; 
+        }
+        span{
+            font-weight: 700 !important;
+            color: $color-action-button;
+            &:hover{
+                font-weight: 700 !important;
+                color: $hover-color-action-button;
+            }
+        }
+    }
+    .vtex-profile-form__profile-container__wrapper{
+        .vtex-profile-form__toggle-business-btn__wrapper.mb7{
+            button{
+                &:first-of-type{
+                    background-color: $bc-profile-button; 
+                    color: $color-profile-button; 
+                    &:hover{
+                        background-color: $hover-bc-profile-button; 
+                        color: $hover-color-profile-button; 
+                    }
+                    &:active{
+                        background-color: $bc-profile-button; 
+                    }
+                }
+            }
+        }
+    }
+}
+
+.account{
+    button{
+        border: none !important;
+    }
+}
+
+.accountPage {
+    margin: 40px 0!important;
+    padding: 10px 0;
+}
+.accountPage .modal {
+    z-index: 999999999999;
+}
+.accountPage h4 {
+    font-size: 24px;
+    font-family: 'Titillium Web', sans-serif;
+    text-transform: uppercase;
+    color: #e2232d;
+}
+.accountPage h5,
+.accountPage p {
+    font-size: 16px;
+    width: 100%;
+    float: left;
+}
+.address-display-unit h5 {
+    margin-left: 13px;
+}
+.accountPage .profile-detail-display {
+    width: calc(33.3% - 20px);
+    min-height: 390px;
+    float: left;
+    margin-right: 20px;
+    padding: 30px;
+    background: #f6f6f6;
+}
+.accountPage .profile-detail-display a {
+    width: 150px;
+    height: 40px;
+    background: #e2232d;
+    color: #fff;
+    float: left;
+    text-align: center;
+    padding-top: 10px;
+    margin: 10px 0;
+}
+.accountPage .profile-detail-display a:hover {
+    background: #ac151d;
+}
+.accountPage .address-display-unit p {
+    margin-left: 15px;
+}
+.accountPage .address-display-block {
+    width: calc(33.3% - 20px);
+    min-height: 390px;
+    float: left;
+    margin-right: 20px;
+    padding: 30px;
+    background: #f6f6f6;
+}
+.accountPage .address-display-block a {
+    width: 250px;
+    height: 40px;
+    background: #e2232d;
+    color: #fff;
+    float: left;
+    text-align: center;
+    padding-top: 10px;
+    margin: 10px 0;
+}
+.accountPage .address-display-block a.delete {
+    border: 1px solid #e2232d;
+    background: transparent;
+    color: #e2232d;
+    float: left!important;
+}
+.accountPage .address-display-block a.delete:hover {
+    background: transparent!important;
+}
+.accountPage .address-display-unit p .delete {
+    float: right;
+}
+.edit-address-link {
+    color: transparent;
+}
+.accountPage .address-display-block a:hover {
+    background: #ac151d;
+}
+.accountPage .form-contact-data-cellphone {
+    margin-bottom: 20px;
+}
+.accountPage .orders-account {
+    width: 33.3%;
+    min-height: 390px;
+    float: left;
+    padding: 30px;
+    background: #f6f6f6;
+}
+.accountPage .orders-account p {
+    float: left;
+}
+.accountPage .orders-account p a {
+    width: 250px;
+    height: 40px;
+    background: #e2232d;
+    color: #fff;
+    float: left;
+    text-align: center;
+    padding-top: 10px;
+    margin: 10px 0;
+}
+.accountPage .orders-account p a:hover {
+    background: #ac151d;
+}
+.profile-detail-form-personal-data label.error {
+    visibility: visible!important;
+    color: red;
+}
+#response-message {
+    opacity: 1!important;
+}
+#response-message h4 {
+    width: 500px!important;
+    height: 500px;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #e2232d!important;
+}
+.modal {
+    opacity: 1!important;
+}
+.modal h4 {
+    text-align: center;
+    opacity: 1!important;
+    width: 500px!important;
+    height: 300px!important;
+    background-color: #fff;
+    padding-top: 110px;
+}
+#profile,
+#form-address,
+#exclude {
+    width: 500px;
+    margin-top: 2%;
+    background-color: #fff;
+}
+.modal-header h3 {
+    margin-left: 20px;
+    font-weight: 600;
+    color: #000;
+    padding: 10px 0;
+}
+.account .modal-header {
+    padding: 5px;
+}
+.account .modal-body {
+    height: 300px;
+    padding: 30px 20px 0 20px;
+    overflow-y: auto;
+}
+.account .address-form-city {
+    margin-bottom: 20px;
+}
+.account .modal-body input {
+    width: 100%;
+}
+.account .modal-body input[type="radio"] {
+    width: 15px;
+}
+.modal-body label {
+    width: 100%;
+    margin-top: 10px;
+}
+.modal-body .row {
+    margin: 0;
+}
+.modal-body label.radio {
+    margin-left: 20px;
+}
+a#business-toggle {
+    font-size: 0;
+}
+a#business-toggle[data=off]:after {
+    content: 'Incluir dados da pessoa jurídica';
+    font-size: 14px;
+    float: left;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+a#business-toggle[data=on]:after {
+    content: 'Não usar dados da pessoa jurídica';
+    font-size: 14px;
+    float: left;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+.modal-footer .btn-primary {
+    color: #fff;
+    background-color: #e2232d;
+    border-color: #e2232d;
+    border-radius: 0;
+    margin-right: 10px;
+}
+.modal-footer .btn-link {
+    color: #a00;
+}
+
+.orders .nav-pills .active a,
+.orders .nav-pills .active a:focus{
+    color: #fff;
+    background: #e2232d;
+    border: #e2232d;
+}
+
+@media only screen and (max-width: 1280px){
+
+    /* Inicio account */
+
+    .accountPage .profile-detail-display,
+    .accountPage .address-display-block,
+    .accountPage .orders-account{
+        width: 90%;
+        margin: 10px 5%;
+    }
+
+
+    /* Modal */
+    #profile, 
+    #form-address, 
+    #exclude{
+        width: 90%;
+        margin: 5%;
+    }
+
+    /* Fim account */
+
+    /* Inicio orders */
+
+    .loja-orders section{
+        padding: 0 20px;
+    }
+
+    /* Fim orders */
+
+}

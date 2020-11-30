@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
+
+<head>
+
+    <vtex.cmc:seoHead />
+    <vtex:metaTags />
+    <vtex:template id="{{loja}}-styles" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+
+<body>
+
+    <!-- Chamada do cabeçalho da loja -->
+
+    <vtex:template id="{{loja}}-header" />
+
+    <main>
+
+        <!-- Estrutura para slide principal -->
+
+        <figure class="container slide-principal">
+            <vtex:contentPlaceHolder id="{{loja}}-slide-principal" />
+        </figure>
+
+        <!-- Estrutura para banners -->
+
+        <article class="container banner-categoria">
+            <section class="container-center banner-categoria__text-wrapper">
+                <h4 class="banner-categoria__title">Titulo do(s) banner(s) caso exista(m)</h4>
+                <p class="banner-categoria__text"> Textos sobre as categorias caso existam</p>
+            </section>
+            <figure class="container-center">
+                <vtex:contentPlaceHolder id="{{loja}}-banners-categoria" />
+            </figure>
+        </article>
+
+        <!-- Estrutura para informativo -->
+        <article class="container-center informativos">
+            <vtex.cmc:{{loja}}Informativo />
+        </article>
+
+        <!-- Estrutura para slide prateleira -->
+
+        <article class="container-center prateleira">
+            <section class="prateleira__titles">
+                <h4 class="prateleira__title"> Titulo prateleira </h4>
+            </section>
+            <nav class="prateleira__shelve-template">
+                <vtex:contentPlaceHolder id="{{loja}}-prateleira01" />
+            </nav>
+        </article>
+
+        <!-- Estrutura para carrossel de marcas -->
+        <article class="container-center marcas">
+            <section class="marcas__text-wrapper">
+                <h4 class="marcas__title">Titulo marcas</h4>
+                    <p class="marcas__text"></p>
+            </section>
+            <nav class="marcas__carousel">
+                <vtex.cmc:{{loja}}Marcas />
+            </nav>
+        </article>
+
+        <!--INICIO YOURVIEWS-->
+        <article class="container-center your-views">
+            <section class="your-views__text-wrapper">
+                <h2 class="your-views__title"> Titulo reviews </h2>
+            </section>
+            <section class="your-views__custom">
+                <vtex:contentPlaceHolder id="{{loja}}-reviews" />
+            </section>
+        </article>
+        <!--FIM YOURVIEWS-->
+
+    </main>
+
+    <!-- Chamada para o rodapé -->
+
+    <vtex:template id="{{loja}}-footer" />
+
+    <!-- Chamada para os scripts Js da loja -->
+
+    <vtex:template id="{{loja}}-scripts" />
+
+</body>
+
+</html>

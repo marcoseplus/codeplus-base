@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
+
+<head>
+
+    <vtex.cmc:seoHead />
+    <vtex:metaTags />
+    <vtex:template id="{{loja}}-styles" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+
+<body class="institucional">
+
+    <!-- Chamada do cabeçalho da {{loja}} -->
+
+    <vtex:template id="{{loja}}-header" />
+
+    <main class="institucional-full">
+
+        <section class="breadcrumb__container">
+            <div class="breadcrumb">
+                <ul class="breadcrumb__list">
+                    <li class="breadcrumb__item">
+                        <a class="breadcrumb__link" title="{{loja}}" href="/">Home</a>
+                    </li>
+                    <li class="breadcrumb__item--last">
+                        <vtex:contentPlaceHolder id="breadcrumb" />
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="institucional-container">
+
+            <aside class="institucional-sidebar">
+                <vtex.cmc:menuInstitucional />
+            </aside>
+
+            <section class="institucional-content">
+                <vtex:contentPlaceHolder id="Texto" />
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- Chamada para o rodapé -->
+
+    <vtex:template id="{{loja}}-footer" />
+
+    <!-- Chamada para os scripts Js da {{loja}} -->
+
+    <vtex:template id="{{loja}}-scripts" />
+
+</body>
+
+</html>

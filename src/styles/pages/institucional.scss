@@ -1,0 +1,156 @@
+/* breadcrumb institucional */
+.breadcrumb {
+    &__container{
+        @include container-center($max-width: 1300px);
+    }
+    &__list {
+        display: flex;
+    }
+    &__item {
+        margin-right: 10px;
+        list-style: none;
+        &:after {
+            content: "/";
+            @include configura-fonte ($first-breadcrumb-color, $inst-font, 400, 16);
+        }
+    }
+    &__link{
+        @include configura-fonte ($first-breadcrumb-color, $inst-font, 400, 16);
+    }
+    &__link--last{
+        @include configura-fonte ($last-breadcrumb-color, $inst-font, 400, 16);
+    }
+}
+
+/* breadcrumb [end] */
+
+
+
+/* institucional */
+//institucional = classe que deve ser colocada no body de todas as opções do institucional
+.institucional {
+    &-full {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    &-container {
+        @include container-center($max-width: 1300px);
+    }
+
+    &-sidebar {
+        width: 36%;
+        padding: 0px 50px 0px 0px;
+        float: left;
+        margin: 35px 0px 0px 0px;
+        @include media-max(1024px){
+            width: 100%;
+        }
+        &__menu {
+            width: 100%;
+            margin: 0px;
+
+            &:before {
+                float: left;
+                width: 100%;
+                line-height: 100%;
+                margin: 0px 0px 20px 0px;
+                content: "Navegue";
+                @include configura-fonte ($preto, $inst-font, 700, 24, $text-transform: uppercase);
+            }
+
+        }
+        &__menu-item {
+            float: left;
+            width: 100%;
+            line-height: 100%;
+            list-style: none;
+            display: block;
+            margin: 0 0 10px 0;
+        }
+        &__menu-link {
+            @include configura-fonte ($preto, $inst-font, 400, 16, $text-transform: uppercase);
+            float: left;
+            width: 100%;
+            line-height: 100%;
+            border: 1px solid #ececec;
+            background: #fff;
+            text-decoration: none;
+            padding: 12px;
+            -webkit-transition: all 0.2s ease-in-out;
+            -moz-transition: all 0.2s ease-in-out;
+            -o-transition: all 0.2s ease-in-out;
+            -ms-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                padding-left: 19px;
+                border-left: 5px solid $cor-borda-esquerda-hover;
+                text-decoration: none;
+                color: #000;
+            }
+        }
+    }
+
+    &-content {
+        padding: 0px;
+        min-height: 400px;
+        width: 64%;
+        margin: 35px 0px 50px 0px;
+        float: left;
+        @include media-max(1024px){
+            width: 100%;
+        }
+        h1 {
+            float: left;
+            width: 100%;
+            line-height: 100%;
+            margin: 4px 0px 20px 0px;
+            @include configura-fonte ($preto, $inst-font, 700, 28, $text-transform: uppercase);
+        }
+
+        h2 {
+            float: left;
+            width: 100%;
+            margin: 17px 0px 7px 0px;
+            font-weight: 700;
+            letter-spacing: 0px;
+            @include configura-fonte ($preto, $inst-font, 700, 18, $text-transform: uppercase);
+        }
+
+        h3 {
+            float: left;
+            width: 100%;
+            margin: 10px 0px 7px 0px;
+            text-decoration: underline;
+            @include configura-fonte ($preto, $inst-font, 500, 16, $text-transform: uppercase);
+        }
+
+        p {
+            float: left;
+            width: 100%;
+            margin: 0px 0px 15px 0px;
+            font-size: 15px;
+            line-height: 150%;
+            @include configura-fonte ($preto, $inst-font, 400, 16);
+        }
+    }
+}
+
+/**aqui colocar os nomes dos body-class para dar efeito*/
+.institucional.central-de-atendimento .institucional-sidebar__menu li#central a,
+.institucional.envio-e-entrega .institucional-sidebar__menu li#envio a,
+.institucional.navegando-e-comprando .institucional-sidebar__menu li#navegando a,
+.institucional.trocas-e-devolucoes .institucional-sidebar__menu li#trocas a,
+.institucional.fale-conosco .institucional-sidebar__menu li#fale a,
+.institucional.mapa-do-site .institucional-sidebar__menu li#mapa a,
+.institucional.a-ebba .institucional-sidebar__menu li#ebba a,
+.institucional.politica-de-privacidade .institucional-sidebar__menu li#politica a,
+.institucional.afiliados .institucional-sidebar__menu li#afiliados a {
+    text-decoration: none;
+    color: #000;
+    border: 1px solid $corda-borda-opcao-selecionada;
+    border-left: 5px solid $corda-borda-esquerda-opcao-selecionada;
+}
+
+/* institucional [end] */

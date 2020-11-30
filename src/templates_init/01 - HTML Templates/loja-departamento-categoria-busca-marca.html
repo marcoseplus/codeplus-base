@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
+
+<head>
+    <vtex.cmc:seoHead />
+    <vtex:metaTags />
+    <vtex:template id="{{loja}}-styles" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+
+<body>
+
+    <!-- Chamada do cabeçalho da loja -->
+
+    <vtex:template id="{{loja}}-header" />
+
+    <main>
+
+        <!-- Estrutura Breadcrumb -->
+
+        <article class="container-center bread">
+            <nav class="bread__nav">
+                <vtex.cmc:epBreadCrumb />
+            </nav>
+        </article>
+
+        <!-- Conteudo central de Departamento -->
+
+        <article class="container-center department-container">
+            <!-- Filtro de departamento -->
+            <aside class="filters">
+                <nav class="filters__nav">
+                    <vtex.cmc:searchNavigator />
+                </nav>
+            </aside>
+
+            <section class="departamento-content">
+
+                <!-- Imagem para o topo -->
+
+                <figure class="departamento-content__banner">
+                    <vtex:contentPlaceHolder id="{{loja}}-BannerDepartamento" />
+                </figure>
+
+                <section class="departamento-content__text-wrapper">
+                    <vtex.cmc:searchTitle />
+                    <vtex:contentPlaceHolder id="{{loja}}-DescricaoCurta" />
+                </section>
+                <!-- Produtos resultantes do Departamento -->
+
+                <section class="departamento-content__vitrine">
+                    <vtex.cmc:searchResult layout="Id da prateleira" itemCount="12" columnCount="12" />
+                </section>
+
+            </section>
+
+        </article>
+
+        <!-- Descricao do Departamento para SEO -->
+
+        <article class="descricao-detalhada container-center">
+            <vtex:contentPlaceHolder id="{{loja}}-TituloDescricaoDetalhada" />
+            <vtex:contentPlaceHolder id="{{loja}}-DescricaoDetalhada" />
+        </article>
+
+    </main>
+
+    <!-- Chamada para o rodapé -->
+
+    <vtex:template id="{{loja}}-footer" />
+
+    <!-- Chamada para os scripts Js da loja -->
+
+    <vtex:template id="{{loja}}-scripts" />
+
+</body>
+
+</html>

@@ -1,0 +1,1080 @@
+/* checkout v6 */
+
+/*caso tenha icones especiais*/
+@font-face {
+    font-family: loja-icon;
+    src:  url('/arquivos/loja-font-001.eot.css');
+    src:  url('/arquivos/loja-font-001.eot.css#iefix') format('embedded-opentype'),
+    url('/arquivos/loja-font-001.ttf.css') format('truetype'),
+    url('/arquivos/loja-font-001.woff.css') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.vtexIdUI .btn-success {
+    background: none #202020!important;
+}
+
+.vtexIdUI #vtexIdUI-facebook {
+    background: none #405689!important;
+}
+
+.vtexIdUI #vtexIdUI-google-plus {
+    background: none #a66457!important;
+    color: #fff!important;
+}
+
+@media only screen and (max-width: 480px) {
+  .vtexIdUI .modal-header .close {
+      right: 10px!important;
+      top: 10px!important; 
+  }
+}
+
+.vtexIdUI .btn {
+    border-radius: 0px!important;
+    font-family: "Work Sans"!important;
+    letter-spacing: 0px!important;
+    font-size: 16px!important;
+    border: none!important;
+    font-weight: 500!important;
+    text-shadow: none!important;
+    min-height: 38px!important;
+    text-transform: inherit;
+}
+
+.vtexIdUI #loginWithUserAndPasswordBtn {
+    background: none #f4f4f4!important;
+    color: #202020!important;
+}
+
+.vtexIdUI .btn i {
+    display: none;
+}
+
+.body-cart {
+    background: #FFF;
+}
+
+.body-cart .btn-success {
+    background-color: #ef7e00;
+    background-image: none;
+}
+
+.payment-letsencrypt::before {
+    content: "";
+    background: url('/arquivos/dana-lest-encrypt.png') no-repeat center 0px;
+    width: 129px;
+    background-size: 100%;
+    display: inline-block;
+    margin: 0px;
+    vertical-align: top;
+    height: 33px;
+    margin: -9px 0px 0px 10px;
+}
+
+.body-cart .btn-success:hover,
+.body-cart .btn-success:focus,
+.body-cart .btn-success:active {
+    background-color: #333333;
+}
+
+.empty-cart-content {
+    text-align: center;
+}
+
+.body-checkout-confirmation .b--light-silver {
+    background-color: #333333;
+    background-image: none;
+    color: #FFF;
+}
+
+.body-checkout-confirmation .b--light-silver:hover,
+.body-checkout-confirmation .b--light-silver:focus,
+.body-checkout-confirmation .b--light-silver:active {
+    background-color: #454545;
+    color: #FFF;
+}
+
+.item-component.hide,
+.link.link-gift-card {
+    display: none!important;
+}
+
+.link-coupon-add {
+    text-decoration: underline;
+}
+
+a {
+    color: #333;
+}
+
+.checkout-header {
+    display: none;
+}
+
+.top-interaction>.container>.row {
+    margin: 0px;
+}
+
+.logoTopo {
+    max-width: 300px;
+    display: inline-block;
+    float: left;
+    margin: 28px 0px 0px 0px;
+    cursor: pointer;
+    float: left;
+    width: 185px;
+    position: relative;
+}
+
+.logoTopo path {
+    fill: #fff;
+}
+
+header .col-sm-3 {
+    float: left;
+    width: 15%;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 100%;
+    text-align: end;
+    margin: 54px 0px 0px 0px;
+}
+
+header .col-sm-3 i {
+    font-size: 19px;
+    margin-right: 6px;
+    font-style: normal;
+}
+
+header .col-sm-3 i::before {
+    content: "\f023";
+    font-family: 'FontAwesome';
+    color: #fff;
+}
+
+header .col-sm-4 {
+    float: left;
+    width: 26%;
+}
+
+header .col-sm-8 {
+    float: left;
+    width: 48%;
+    position: relative;
+    margin: 28px 3% 0px 7%;
+}
+
+header {
+    display: block!important;
+    height: 123px;
+    background: #000;
+}
+
+header .checkBar_bar {
+    display: block;
+    left: 1px;
+    right: 1px;
+    height: 7px;
+    position: absolute;
+    top: 20px;
+    box-shadow: none;
+    background: #dfdfdf;
+    z-index: 1;
+    right: 106px;
+}
+
+header .checkBar_bar .checkBar_bar_inner {
+    display: block;
+    height: 100%;
+    background-color: #b0934e;
+    transition: width .5s ease-out;
+    width: 27%;
+}
+
+.body-checkout-confirmation header .checkBar_bar .checkBar_bar_inner {
+    display: block;
+    height: 100%;
+    background-color: #6EADB5;
+    transition: width .5s ease-out;
+    width: 100%
+}
+
+.body-order-form header .checkBar_bar .checkBar_bar_inner {
+    width: 76%;
+}
+
+.body-order-placed header .checkBar_bar .checkBar_bar_inner {
+    width: 100%
+}
+
+@media screen and (max-width: 454px) {
+    header .checkBar_bar {
+        left: 3%;
+        right: 3%
+    }
+    header .checkBar_box .checkBar_item:nth-child(4) .text {
+        left: auto;
+        text-align: right;
+        right: 0
+    }
+}
+
+header .checkBar_box .checkBar_item.checkBar_item_cart .barra::before {
+    float: left;
+    position: relative;
+    font-size: 20px;
+    color: #000;
+    margin: 7px 0px 0px 10px;
+    display: inline-block;
+    content: "\e90c";
+    font-family: 'loja-icon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+header .checkBar_box .checkBar_item.checkBar_item_pgto .barra::before {
+    float: left;
+    position: relative;
+    font-size: 15px;
+    color: #666;
+    margin: 11px 0px 0px 9px;
+    display: inline-block;
+    content: "\f09d";
+    font-family: 'FontAwesome';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+header .checkBar_box .checkBar_item.checkBar_item_finish .barra::before {
+    float: left;
+    position: relative;
+    font-size: 15px;
+    color: #666;
+    margin: 10px 0px 0px 11px;
+    display: inline-block;
+    /*content: "\e918";*/
+    content: "\f046";
+    font-family: 'FontAwesome';
+    speak: none;
+    font-style: normal;
+    font-weight: bold;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+header .checkBar_box .checkBar_item .barra {
+    display: block;
+    width: 34px;
+    height: 34px;
+    background: #dfdfdf;
+    /* border: 2px solid #d7d7d7; */
+    transition: background .5s ease-out;
+    margin: 5px 0 0;
+    border-radius: 22px;
+}
+
+header .checkBar_box .checkBar_item .text {
+    position: absolute;
+    width: 90%;
+    left: -9%;
+    bottom: 0;
+    font-weight: 500;
+    text-align: left;
+    color: #fff;
+    top: 43px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+header .checkBar_box .checkBar_item.checkBar_item_cart .text {
+    left: -4%;
+}
+
+header .checkBar_box .checkBar_item.checkBar_item_identf .text {
+    left: -12%;
+}
+
+header .checkBar_box .checkBar_item.checkBar_item_pgto .text {
+    left: -7%;
+}
+
+header .checkBar_box .checkBar_item.checkBar_item_finish .text {
+    left: inherit;
+    right: -57px;
+}
+
+@media screen and (max-width: 454px) {
+    header .checkBar_box .checkBar_item .text {
+        font-size: 10px
+    }
+}
+
+.body-order-form header .checkBar_item.checkBar_item_identf .barra,
+.body-order-placed header .checkBar_box .checkBar_item.checkBar_item_finish .barra,
+.body-order-placed header .checkBar_box .checkBar_item.checkBar_item_pgto .barra,
+.body-checkout-confirmation header .checkBar_box .checkBar_item.checkBar_item_pgto .barra,
+header .checkBar_box .checkBar_item.checkBar_item_cart .barra {
+    border-color: #fff;
+    background: #b0934e;
+}
+
+.body-order-form header .checkBar_box .checkBar_item.checkBar_item_identf .barra::before,
+.body-order-form header .checkBar_box .checkBar_item.checkBar_item_pgto .barra::before {
+    color: #000;
+}
+
+.body-checkout-confirmation header .checkBar_box .checkBar_item.checkBar_item_finish .barra,
+.step-email header .checkBar_box .checkBar_item.checkBar_item_identification .barra,
+.step-payment header .checkBar_box .checkBar_item.checkBar_item_identification .barra,
+.step-payment header .checkBar_box .checkBar_item.checkBar_item_pgto .barra {
+    border-color: #fff;
+    background: #646464;
+}
+
+.body-checkout-confirmation header .checkBar_box .checkBar_item.checkBar_item_finish .barra {
+    background: #b0934e;
+}
+
+.body-order-form header .checkBar_box .checkBar_item.checkBar_item_cart .barra,
+.body-order-form header .checkBar_box .checkBar_item.checkBar_item_pgto .barra {
+    background: #b0934e;
+}
+
+.step-email header .checkBar_box .checkBar_item.checkBar_item_cart .text,
+.step-payment header .checkBar_box .checkBar_item.checkBar_item_cart .text,
+header .checkBar_box .checkBar_item.checkBar_item_cart .text {
+    color: #fff;
+}
+
+header .checkBar_box .checkBar_item.checkBar_item_cart .text {
+    color: #fff;
+}
+
+.cart-more-options.span7 {
+    margin: 0px 0px 10px 0px;
+}
+
+header .checkBar_box {
+    width: calc(100% - 85px);
+    display: table;
+    position: relative;
+    z-index: 2;
+    right: 85px;
+    float: right;
+}
+
+header .checkBar_box .checkBar_item {
+    display: block;
+    position: relative;
+    padding-bottom: 25px;
+    /*width: 33%;
+     */
+    width: calc(50% - 17px);
+    float: left
+}
+
+header .checkBar_box .checkBar_item.checkBar_item_finish {
+    width: 17px;
+}
+
+header .checkBar_box .checkBar_item.checkBar_item_finish .text {
+    width: 102px;
+}
+
+.body-cart,
+body,
+.www-marquinhom-com-br.body-cart,
+.marquinhom-vtexcommercestable-com-br.body-cart {
+    font-family: 'Work Sans', sans-serif!important;
+}
+
+a#orderform-to-cart {
+    font-size: 0px;
+}
+
+.payment-group {
+    width: calc(100% - 455px);
+}
+
+.payment-group-list-btn {
+    width: 93%;
+}
+
+.payment-group-item {
+    width: 100%;
+}
+
+/*#payment-data-submit::after {
+    content: "Concluir Compra";
+    font-size: 16px;
+}*/
+
+a#cart-to-orderform::before {
+    content: "Continuar";
+    font-size: 18px;
+}
+
+a#cart-to-orderform {
+    font-size: 0;
+}
+
+/*button.btn.btn-large span {
+    font-size: 0px;
+}*/
+
+.body-cart {
+    background: #FFF !important;
+    padding-bottom: 0 !important;
+}
+
+.step,
+.cart,
+.totalizers {
+    border: 1px solid #ececec;
+}
+
+.table.cart-items thead th {
+    color: #333;
+    text-transform: uppercase;
+    font-size: 16px;
+    border-bottom: 1px solid #ccc;
+}
+
+.seller.muted {
+    font-weight: 400;
+}
+
+.cart-links.cart-links-bottom {
+    width: 100%;
+}
+
+.cart-links.cart-links-bottom .link-choose-more-products-wrapper {
+    float: left;
+}
+
+.cart-links.cart-links-bottom .btn-place-order-wrapper {
+    float: right;
+}
+
+.table.cart-items>tbody {
+    border-bottom: 1px solid #ccc;
+}
+
+#cart-choose-more-products {
+    font-size: 0px;
+    background-color: #fff!important;
+    background-image: none;
+    color: #000;
+    border-radius: 0;
+    text-transform: uppercase;
+    height: 18px;
+    border: 1px solid #000;
+    padding: 18px 63px 16px 77px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    float: left;
+    margin: 0px 0px 0px 0px;
+}
+
+#cart-choose-more-products::before {
+    content: "voltar";
+    font-size: 15px;
+}
+
+.muted {
+    color: #000;
+}
+
+.icon.icon-minus-sign {
+    font-size: 0px;
+    font-size: 0px;
+    width: 25px;
+    display: inline-block;
+    margin: 4px 0px 0px 0px;
+    vertical-align: top;
+    height: 25px;
+    cursor: pointer;
+    background: #454545;
+    border-radius: 20px;
+    -webkit-box-shadow: -1px 2px 0px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: -1px 2px 0px 0px rgba(0, 0, 0, 1);
+    box-shadow: -1px 2px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.icon.icon-minus-sign::before {
+    content: "-";
+    font-size: 28px;
+    color: #fff;
+    line-height: 25px;
+    text-align: center;
+    float: left;
+    width: 100%;
+    font-weight: bold;
+    margin: -3px 0px 0px 0px;
+}
+
+.icon.icon-plus-sign {
+    font-size: 0px;
+    font-size: 0px;
+    width: 25px;
+    display: inline-block;
+    margin: 4px 0px 0px 0px;
+    vertical-align: top;
+    height: 25px;
+    cursor: pointer;
+    background: #454545;
+    border-radius: 20px;
+    -webkit-box-shadow: -1px 2px 0px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: -1px 2px 0px 0px rgba(0, 0, 0, 1);
+    box-shadow: -1px 2px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.icon.icon-plus-sign::before {
+    content: "+";
+    font-size: 17px;
+    color: #fff;
+    line-height: 29px;
+    text-align: center;
+    float: left;
+    width: 100%;
+    font-weight: bold;
+    margin: -2px 0px 0px 0px;
+    font-family: "Work Sans";
+}
+
+.quantity input {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    margin: 0 5px;
+    text-align: center;
+    width: 25px;
+    height: 26px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    border-top: 2px solid #ccc;
+}
+
+body,
+label,
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+select,
+.btn,
+.btn-group>.btn {
+    font-size: 14px;
+    color: #333333;
+    font-weight: 500;
+}
+
+.client-pre-email .btn-success {
+    background-color: #ef7e00!important;
+    background-image: none;
+    color: #fff;
+    border-radius: 0;
+    text-transform: uppercase;
+    height: 18px;
+    border-bottom: 2px solid #df5a11;
+    padding: 17px 20px 31px 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.body-cart .btn-success {
+    background-color: #00b07d!important;
+    background-image: none;
+    color: #fff;
+    border-radius: 0;
+    text-transform: uppercase;
+    height: 18px;
+    border-bottom: 2px solid #00b07d;
+    padding: 18px 57px 16px 68px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.body-cart .btn-success:hover,
+.body-cart .btn-success:focus,
+.body-cart .btn-success:active {
+    opacity: 0.9;
+}
+
+.body-cart a {
+    color: #333333;
+}
+
+.full-cart .totalizers tfoot td {
+    font-size: 17px;
+}
+
+.empty-cart-content {
+    text-align: left !important;
+}
+
+.empty-cart-content h2 {
+    font-weight: 300;
+    color: #464646;
+}
+
+#cart-title,
+#orderform-title,
+.body-checkout-confirmation h1 {
+    margin-top: 50px;
+    position: relative;
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 8px;
+    margin-bottom: 60px;
+    color: #000!important;
+    text-align: center!important;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#cart-title {
+    font-size: 0px!important;
+}
+
+#cart-title:before {
+    content: "Sacola de compras" !important;
+    text-align: left;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    color: #000!important;
+    position: absolute;
+    text-align: center!important;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px!important;
+}
+
+#cart-title:after,
+#orderform-title:after,
+.body-checkout-confirmation h1:after {
+    content: "";
+    height: 1px;
+    width: 80px;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    margin: 0px 0px 0px -40px;
+    background: #000;
+}
+
+h2.empty-cart-title:before {
+    content: "Seu carrinho está vazio." !important;
+    font-size: 31.5px;
+}
+
+.Discounts .monetary,
+.new-product-price, .new-product-price-label {
+    color: red;
+}
+
+h2.empty-cart-title {
+    font-size: 0px;
+    text-align: center;
+}
+
+.empty-cart-message,
+.empty-cart-links {
+    text-align: center;
+}
+
+.container {
+    width: 1200px;
+}
+
+.container-cart {
+    min-height: 610px;
+}
+
+.checkout-header {
+    height: 123px;
+    background: #fff;
+    vertical-align: middle;
+    line-height: 100px;
+}
+
+.checkout-footer {
+    min-height: 135px;
+    padding: 30px 0;
+    background: #333333;
+    color: #a68cb3;
+    font-size: 12px;
+}
+
+.checkout-footer h1 {
+    margin-top: 0;
+    font-weight: 300;
+    font-size: 17px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.checkout-footer p {
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
+#compraSegura {
+    text-align: right;
+    clear: both;
+    display: block;
+    line-height: 30px;
+    padding: 15px 0;
+    color: #909090;
+}
+
+#compraSegura i {
+    color: #f1bf38;
+    font-size: 19px;
+    margin-right: 8px;
+    vertical-align: -2px;
+}
+
+@media (min-width: 1200px) {
+    body {
+        padding-top: 0px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .checkout-header {
+        margin: 0 -20px;
+        padding: 0 40px;
+    }
+    .checkout-footer {
+        margin: 0 -20px;
+        padding: 30px 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container-cart {
+        min-height: 400px;
+    }
+}
+
+.mini-cart .table tfoot td {
+    color: #000;
+}
+
+.btn-success {
+    background-color: #00b07d!important;
+    background-image: none;
+    color: #fff;
+    border-radius: 0;
+    text-transform: uppercase;
+    border-bottom: 2px solid #00b07d;
+    padding: 18px 15px 16px 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#payment-data-submit i {
+    font-size: 20px;
+    margin: 0px 5px 0px 0px;
+}
+
+.body-checkout-confirmation #app-container {
+    margin-bottom: 40px;
+}
+
+.body-checkout-confirmation header .checkBar_box .checkBar_item.checkBar_item_cart .barra::before,
+.body-checkout-confirmation header .checkBar_box .checkBar_item.checkBar_item_pgto .barra::before,
+.body-checkout-confirmation header .checkBar_box .checkBar_item.checkBar_item_finish .barra::before {
+    color: #fff;
+}
+
+.body-checkout-confirmation header .checkBar_box .checkBar_item .barra {
+    background: #b0934e;
+}
+
+footer {
+    background: #000;
+    display: block!important;
+    float: left;
+    position: relative;
+    width: 100%;
+    margin: 60px 0px 0px 0px;
+}
+
+footer::before {
+    content: "";
+    background: url(/arquivos/efeito-brush-superior-tiny.png) no-repeat;
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+footer .footer {
+    position: relative;
+    margin: 0px auto;
+    padding: 30px 50px 0px 50px;
+}
+
+.footer-01-box>span {
+    float: left;
+    width: 100%;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0px 0px 13px 0px;
+    position: relative;
+    padding: 4px 0px 13px 0px;
+    line-height: 120%;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 1px solid #333;
+}
+
+#footer-01-03 {
+    width: 17%;
+    float: left;
+    margin: 40px 0px 30px 31%;
+}
+
+#footer-01-04 {
+    width: 20%;
+    float: left;
+    margin: 40px 0px 30px 5%;
+}
+
+footer p {
+    padding: 0px 0px 10px 0px;
+    font-size: 15px;
+    color: #e2e2e2;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+footer .rules {
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.icone-lets-encrypt::before {
+    content: "\e903";
+    font-family: 'loja-icon';
+    color: #000;
+    font-size: 29px;
+    display: inline-block;
+}
+
+#footer-01-04 > div > span {
+    float: left;
+    width: 43px;
+    height: 27px;
+    margin: 0px 10px 8px 0px;
+    text-align: center;
+}
+
+#footer-01-04 > div {
+    max-width: 213px;
+}
+
+#footer-01-04 > div > span::before {
+    display: inline-block;
+    text-align: center;
+    width: 43px;
+    height: 27px;
+    margin: 0px 0px 0px 6px;
+}
+
+.payment-visa {
+    background: url("/arquivos/dana-pgto-visa.png") no-repeat 0px 0px;
+}
+
+.payment-master {
+    background: url("/arquivos/dana-pgto-mastercard.png") no-repeat 0px 0px;
+}
+
+.payment-diners {
+    background: url("/arquivos/dana-pgto-Dinners.png") no-repeat 0px 0px;
+}
+
+.payment-boleto {
+    background: url("/arquivos/dana-pgto-boleto-bancario.png") no-repeat 0px 0px;
+}
+
+.payment-elo {
+    background: url("/arquivos/dana-pgto-elo.png") no-repeat 0px 0px;
+}
+
+.payment-wirecard {
+    background: url("/arquivos/dana-pgto-wirecard.png") no-repeat 0px 0px;
+}
+
+.payment-amex {
+    background: url("/arquivos/dana-pgto-amex.jpg") no-repeat 0px 0px;
+}
+
+.payment-hipercard {
+    background: url("/arquivos/dana-pgto-hipercard.jpg") no-repeat 0px 0px;
+}
+
+.footer-01-box>div {
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+    body .container {
+        width: 100%;
+    }
+    body .container.container-main {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        padding: 0px 25px;
+    }
+}
+
+.summary-template-holder .summary .coupon {
+     position: relative;
+    z-index: 9; 
+}
+
+@media screen and (max-width: 767px) {
+    .summary-template-holder .summary .coupon {
+        width: 99%;
+        text-align: right;
+        float: left;
+    }
+    .summary-template-holder .summary .shipping {
+        float: right;
+        width: 97%;
+        text-align: right;
+    }
+    .logoTopo {
+        width: 158px;
+        height: 74px;
+        float: left;
+        display: inline-block;
+        margin: 22px 0px 0px -79px;
+        position: absolute;
+        top: 0px;
+        left: 50%;
+    }
+    header {
+        margin: 0px -10px;
+        height: 169px;
+    }
+    .body-checkout-confirmation header {
+        margin: 0px -20px;
+    }
+    #footer-01-03,
+    #footer-01-04 {
+        width: 100%;
+        margin: 20px 0px 0px 0px;
+    }
+    footer {
+        width: calc(100% + 20px);
+        margin: 0px -10px;
+    }
+    header .col-sm-3 {
+        position: absolute;
+        top: 18px;
+        right: 21px;
+        width: 147px;
+        margin: 0px;
+        display: none;
+    }
+    header .col-sm-8 {
+        margin: 0px;
+        position: absolute;
+        top: 70px;
+        left: 0px;
+        width: 90%;
+        margin: 18px 0px 0px 5%;
+    }
+    header .checkBar_box {
+        width: 100%;
+        right: 0px;
+    }
+    header .checkBar_box .checkBar_item.checkBar_item_finish .text {
+        left: inherit;
+        right: -15px;
+        text-align: right;
+    }
+    header .checkBar_box .checkBar_item.checkBar_item_cart .text {
+        left: 0px;
+    }
+    header .checkBar_box .checkBar_item.checkBar_item_pgto .text {
+        left: -11%;
+        width: 78px;
+    }
+    .full-cart .cart table tbody tr td.quantity {
+        width: 112px;
+    }
+    #cart-choose-more-products {
+        width: 99%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .cart-links.cart-links-bottom .link-choose-more-products-wrapper {
+        float: left;
+        width: 100%;
+    }
+    .cart-links.cart-links-bottom .btn-place-order-wrapper {
+        width: 100%;
+    }
+    .payment-group {
+        width: inherit;
+    }
+    h2.empty-cart-title {
+        text-align: center;
+    }
+    .empty-cart-message {
+        text-align: center;
+    }
+    .empty-cart-links #cart-choose-products {
+        text-align: center;
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 90%;
+        margin: 20px 0px 0px 5%;
+    }
+    .full-cart .cart-links-bottom .btn-success {
+        padding: 18px 0px 16px 0px;
+    }
+}
+
+.body-checkout-confirmation .b--light-silver:hover, 
+.body-checkout-confirmation .b--light-silver:focus, 
+.body-checkout-confirmation .b--light-silver:active {
+    background-color: #000;
+}

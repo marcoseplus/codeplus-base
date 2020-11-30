@@ -1,0 +1,85 @@
+.vtexIdUI-show-app .vtexIdUI-heading {
+    color: #1f2132 !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    line-height: 25px !important;
+    text-align: center !important;
+    letter-spacing: 1px !important;
+    text-transform: uppercase !important;
+    font-family: 'Raleway', sans-serif !important;
+}
+.vtexIdUI .btn {
+    outline: 0 !important;
+    color: #333 !important;
+    font-size: 14px !important;
+    box-shadow: none !important;
+    background: white !important;
+    border-radius: 2px !important;
+    letter-spacing: 1px !important;
+    transition: 0.5s all !important;
+    border: 1px solid #f5cc6f !important;
+    text-transform: uppercase !important;
+}
+.vtexIdUI .btn:hover {
+    color: #333 !important;
+    background: #F4CC1B !important;
+    border-color: #F4CC1B !important;
+}
+.vtexIdUI #vtexIdUI-facebook {
+    color: #fff !important;
+    border-color: #4960a5 !important;
+    background: #4568ad !important;
+}
+.vtexIdUI #vtexIdUI-google-plus {
+    color: #fff !important;
+    border-color: #ac151d !important;
+    background: #ac151d !important;
+}
+
+.vtexIdUI #vtexIdUI-google-plus p span{
+    color: #fff !important;
+}
+
+.vtexIdUI .vtexIdUI-others-send-email {
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.vtexIdUI .vtexid-icon-mail {
+    top: -4px !important;
+    right: 0px !important;
+    font-size: 50px !important;
+}
+.vtexIdUI .vtexid-icon-facebook,
+.vtexIdUI .vtexid-icon-google-plus {
+    top: 0px !important;
+    right: 1px !important;
+    font-size: 44px !important;
+}
+.vtexIdUI span { font-weight: 400; }
+.vtexIdUI .btn-success { background: #f5cc6f !important; }
+.vtexIdUI .modal-body { margin-top: 20px !important; }
+@media only screen and (min-width: 768px) {
+    .vtexIdUI-show-app { width: 550px !important; }
+}
+@media only screen and (max-width: 767px) {
+    .vtexIdUI-show-app {
+        left: 0 !important;
+        margin-left: 0 !important;
+        width: 100% !important;
+        height: 450px !important;
+    }
+    .vtexIdUI .btn {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+    .vtexIdUI .btn-block span {
+        white-space: normal;
+        word-wrap: break-word;
+    }
+    .vtexIdUI .modal-body { max-height: 100% !important; }
+}
+@media only screen and (max-width: 400px) {
+    .vtexIdUI .account-list .btn i,
+    .vtexIdUI .vtexIdUI-providers-list .btn i {
+        display: none;
+    }
+}

@@ -1,0 +1,9 @@
+//fonte padrão apenas para não dar erros na inicialização do Sass
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+@font-face {
+    font-family: 'icomoon';
+    src: url(/arquivos/icomoon.css);
+    src: url(/arquivos/icomoon.css#iefix) format('embedded-opentype'),
+        url(/arquivos/icomoon.css) format('woff')
+}

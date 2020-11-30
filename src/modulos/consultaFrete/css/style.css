@@ -1,0 +1,104 @@
+.calc-frete{
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+}
+
+.calc-frete .title-calc-frete{
+    width: auto;
+    float: left;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-right: 10px;
+    margin-top: 7px;
+}
+
+.calc-frete .title-calc-frete:before{
+    width: 20px;
+    height: 20px;
+    content:'';
+    font-size: 'icomoon';
+    float: left;
+    background: #f00;
+    margin-right: 5px;
+}
+
+.calc-frete #formFrete{
+    width: 150px;
+    float: left;
+}
+
+.calc-frete #formFrete .cep{
+    width: 80%;
+    float: left;
+    padding: 5px;
+    border: 1px #ddd solid;
+    border-right: none; 
+}
+
+.calc-frete #formFrete input:last-child{
+    width: 20%;
+    float: left;
+    font-weight: 600;
+    background: #000;
+    color:#fff;
+    border: none; 
+    padding: 6px;
+}
+
+.calc-frete .erro-cep{
+    font-weight: 600;
+    color: #c00;
+    float: left;
+    margin-left: 10px;
+    margin-top: 6px;
+}
+
+.calc-frete .nao-sei-cep{
+    width: 100%;
+    font-size: 12px;
+    float: left;
+    margin: 5px 0;
+}
+
+.calc-frete .nao-sei-cep a{
+    color: #4568ad;
+    text-decoration: underline;
+}
+
+.calc-frete .listaFrete{
+    width: 100%;
+    float: left;
+    display: none;
+    margin-top: 20px;
+}
+
+.calc-frete .listaFrete tr,
+.calc-frete .listaFrete tbody{
+    width: 100%;
+    float: left;
+}
+
+.calc-frete .listaFrete tr{
+    border-bottom: 1px solid #ddd;
+}
+
+.calc-frete .listaFrete tr:first-child{
+    background: #eee;
+}
+
+.calc-frete .listaFrete tr th:first-child,
+.calc-frete .listaFrete tr td:first-child{
+    width: 50%;
+}
+
+.calc-frete .listaFrete tr th,
+.calc-frete .listaFrete tr td{
+    width: 25%;
+    float: left;
+    padding: 5px 10px;
+}
+
+.calc-frete .listaFrete tr td{
+    padding: 10px;
+}

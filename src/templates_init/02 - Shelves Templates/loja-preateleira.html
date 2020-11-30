@@ -1,0 +1,49 @@
+#set($id = $product.Id)
+#set($idSku = $product.productVariantId)
+#set($uri = $product.Uri)
+#set($escapedName = $product.HtmlEscapedName)
+#set($campoProduto = $product.ProductField(id))
+
+<a class="prateleira__productImage js--lazyload has--lazyload" data-noscript="" title="$escapedName" href="$uri">
+    <noscript>$product.GetImageTag(2)</noscript>
+</a>
+
+<div class="prateleira__data" data-id="$id">
+    <h3 class="prateleira__lead">
+        <a class="prateleira__link" title="$escapedName" href="$uri">
+            $product.Name
+        </a>
+    </h3>        
+    
+    #if ($product.IsInStock)
+        <p class="prateleira__price">
+            <a class="prateleira__link" title="$escapedName" href="$uri">
+                #if ($product.HasBestPrice)
+                    <span class="prateleira__oldPrice">
+                        De <b>$product.ListPrice</b>
+                    </span>
+                    <span class="prateleira__bestPrice">
+                        Por $product.BestPrice
+                    </span>
+                #else
+                    <span class="prateleira__oldPrice">
+                    </span>
+                    <span class="prateleira__bestPrice">
+                        Por $product.BestPrice
+                    </span>                    
+                #end
+                
+                <em class="prateleira__installment">
+                    ou em até <b>$product.NumbersOfInstallment x</b> de <b>$product.InstallmentValue</b> sem juros*
+                </em>
+
+            </a>
+            
+            <span class="prateleira__btn-comprar" data-id="$idSku"> <a href="$uri"> Ver mais </a> </span>
+        </p>
+        
+    #else
+        <p class="prateleira__outOfStock">Produto Esgotado</p> 
+    #end
+    
+</div>

@@ -1,0 +1,218 @@
+/* Reset css */
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    color: #000;
+    outline-color: transparent!important;
+}
+*:focus {
+    outline-color: transparent!important;
+}
+*, *:before, *:after {
+    margin: 0;
+    padding: 0; 
+    outline: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: $primaryFont;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+li{
+    line-height: inherit;
+    list-style: none;;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size: inherit;
+    margin: 0;
+    padding: 0;
+    line-height: initial;
+}
+p{
+    padding: 0;
+    margin: 0;
+}
+a:focus, a:active, 
+button:focus, 
+button:active, 
+.btn:focus, 
+.btn:active, 
+.button:focus, 
+.button:active {
+    outline: none;
+    text-decoration: none;
+    color:inherit;
+}
+a:hover{
+    text-decoration: none;
+    color:inherit;
+}
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+    display: inline-block;
+    height: inherit;
+    padding: inherit;
+    margin-bottom: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    vertical-align: middle;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+input[type="checkbox"],
+input[type="radio"], 
+select[type="checkbox"], 
+select[type="radio"], 
+textarea[type="checkbox"], 
+textarea[type="radio"] {
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    padding: 0!important;
+    overflow-x: hidden;
+}
+body.aberto {
+    overflow: hidden;
+}
+body.aberto .topo .menu-departamento {
+    overflow: auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 100%!important;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.container-center {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: inline-block;
+
+    @media screen and(max-width: 1280px) {
+        max-width: 1220px;
+    }
+}
+
+
+/* Inicio load */
+
+body>#ajaxBusy.loading {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    display: block!important;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    z-index: 999999;
+    text-indent: -99999px;
+    text-align: center;
+    background-color: transparent;
+}
+body>#ajaxBusy.loading[style="display: none;"] {
+    display: none!important;
+}
+body>#ajaxBusy.loading p {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border-style: solid;
+    animation: loader 500ms linear infinite;
+    border-width: 3px;
+    border-color: #e2232d transparent;
+    z-index: 9999;
+    margin: -25px 0 0 -25px;
+    top: 50%;
+    left: 50%;
+}
+@keyframes loader {
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-ms-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-o-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Fim load */
+
+
+

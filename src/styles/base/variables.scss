@@ -1,0 +1,77 @@
+// Exemplo
+
+$cinza-claro: #B9B9B9;
+$cinza-medio: #7F7F7F;
+$cinza-escuro: #343434;
+$preto: #000;
+$branco: #fff;
+
+$cinza-bg-footer: #F1F2F2;
+$vermelho: #DF5252;
+$azul: #4965AF;
+$roxo: #C8D1E7;
+$lilas: #BA007C;
+$verde: #00EDB8;
+$bege: #EDE1CD;
+$verde-saturado: #69C8B3;
+$laranja: orange;
+
+$primaryFont: sans-serif;
+$secondFont: sans-serif;
+
+//institucional 
+$inst-font: $primaryFont;
+
+//cores do breacrumb institucional
+$first-breadcrumb-color: $cinza-claro;
+$last-breadcrumb-color: $laranja;
+
+//cor da borda esquerda no hover
+$cor-borda-esquerda-hover: $laranja;
+
+//cor da borda da opção do institucional que está selecionada
+$corda-borda-opcao-selecionada: $verde;
+
+//cor da borda esquerda da opção do institucional que está selecionada
+$corda-borda-esquerda-opcao-selecionada: $verde;
+$primaryFont: 'Open Sans';
+$secondFont: 'Open Sans';
+
+//fonte para account, deve ser passado com !important
+$font: $primaryFont !important;
+
+//cor da borda do menu lateral
+$borda-colorida: #52bf4d;
+
+//cor de fundo de botões de seleção
+$bc-primary: #52bf4d;
+
+//botoões de clique das opções principais
+$bc-action-button: black;
+$color-action-button: white;
+$hover-bc-action-button: #ebebeb;
+$hover-color-action-button: white;
+
+//botões da parte de adicionar e alterar cartões
+$bc-card-button: black;
+$color-card-button: white;
+$hover-bc-card-button: #ebebeb;
+$hover-color-card-button: white;
+
+//botão de cancelar saida do account
+$bc-cancel-exit-button: black;
+$color-cancel-exit-button: white;
+$hover-bc-cancel-exit-button: #ebebeb;
+$hover-color-cancel-exit-button: white;
+
+//botao de sair do account
+$bc-exit-button: black;
+$color-exit-button: white;
+$hover-bc-exit-button: #ebebeb;
+$hover-color-exit-button: white;
+
+//botoes da parte de adicionar informações do perfil de cliente
+$bc-profile-button: black; 
+$color-profile-button: white; 
+$hover-bc-profile-button: #ebebeb; 
+$hover-color-profile-button: white; 

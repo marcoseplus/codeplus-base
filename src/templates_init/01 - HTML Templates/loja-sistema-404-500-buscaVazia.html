@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
+
+<head>
+
+    <vtex.cmc:seoHead />
+    <vtex:metaTags />
+    <vtex:template id="{{loja}}-styles" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+
+<body>
+
+    <!-- Chamada do cabeçalho da {{loja}} -->
+
+    <vtex:template id="{{loja}}-header" />
+
+    <main>
+
+        <!-- Trecho para breadCrumb -->
+
+        <article class="container-center bread">
+            <nav class="bread__nav">
+                <ul class="bread__list">
+                    <li class="bread__list-item"><a href="/"> Home </a></li>
+                    <li class="bread__list-item">
+                        <vtex:contentPlaceHolder id="ep-bread" />
+                    </li>
+                </ul>
+            </nav>
+        </article>
+
+        <!-- Trecho para breadCrumb -->
+
+        <article class="container-center page-erro">
+
+            <figure class="page-erro__banner">
+                <vtex:contentPlaceHolder id="{{loja}}-banner-erro" />
+            </figure>
+
+            <h3 class="page-erro__title">
+                <vtex:contentPlaceHolder id="{{loja}}-texto-erro" />
+            </h3>
+
+            <p class="page-erro__text"> O que acha de realizar uma nova busca? </p>
+
+            <div class="page-erro__dicas">
+                <p class="page-erro__text">
+                    Tente fazer sua busca seguindo estas dicas;<br />
+                    Verifique se ocorreu algum erro de digitação;<br />
+                    Tente utilizar uma única palavra;<br />
+                    Reescreva sua busca utilizando termos mais genéricos.
+                </p>
+            </div>
+
+            <a class="page-erro__button" href="/">
+                Voltar para home
+            </a>
+
+        </article>
+
+        <article class="container-center prateleira">
+            <section class="prateleira__titles">
+                <h4 class="prateleira__title"> Titulo prateleira </h4>
+            </section>
+            <nav class="prateleira__shelve-template">
+                <vtex:contentPlaceHolder id="{{loja}}-prateleira01" />
+            </nav>
+        </article>
+
+
+    </main>
+
+    <!-- Chamada para o rodapé -->
+
+    <vtex:template id="{{loja}}-footer" />
+
+    <!-- Chamada para os scripts Js da {{loja}} -->
+
+    <vtex:template id="{{loja}}-scripts" />
+
+</body>
+
+</html>

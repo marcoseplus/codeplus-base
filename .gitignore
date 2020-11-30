@@ -1,0 +1,6 @@
+##Exclui modulos##
+node_modules/
+build/
+
+##Exclui PSD##
+*.psd

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
+
+<head>
+
+    <vtex.cmc:seoHead />
+    <vtex:metaTags />
+    <vtex:template id="{{loja}}-styles" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <vtex.cmc:productRichSnippets showFacebook="1" />
+
+</head>
+
+<body>
+
+    <vtex.cmc:productRichSnippets showGoogle="1" />
+
+    <!-- Chamada do cabeçalho da {{loja}} -->
+
+    <vtex:template id="{{loja}}-header" />
+
+    <main>
+
+        <!-- Estrutura Breadcrumb -->
+
+        <article class="container bread">
+            <vtex.cmc:epBreadCrumb />
+        </article>
+
+        <article class="container-center produto-geral">
+
+            <!-- Estrutura para imagem do produto -->
+
+            <section class="produto-esquerda">
+                <figure class="produto-esquerda__img">
+                    <vtex.cmc:ProductImage zoom="on" />
+                </figure>
+            </section>
+
+            <!-- Estrutura para as principais informações do produto -->
+
+            <section class="produto-direita">
+
+                <h3 class="produto-direita__title">
+                    <vtex.cmc:productName />
+                </h3>
+
+                <p class="produto-direita__codigo">
+                    Cód:
+                    <vtex.cmc:skuReference />
+                </p>
+
+                <p class="produto-direita__curta-descricao">
+                    <h4> Informações do produto </h4>
+                    <vtex.cmc:productDescriptionShort />
+                </p>
+
+                <nav class="produto-direita__variantes-sku">
+                    <vtex.cmc:skuSelection />
+                </nav>
+
+                <div class="produto-direita__price">
+                    <vtex.cmc:skuPrice />
+                </div>
+
+                <div class="produto-direita__buy-button">
+                    <vtex.cmc:BuyButton />
+                </div>
+
+
+            </section>
+        </article>
+        <!-- Estrutura de compre junto -->
+
+        <article class="container-center compreJunto">
+            <h2 class="compreJunto__titulo">Aproveite e Compre Junto</h2>
+            <div class="compreJunto__produtos-wrapper">
+                <div class="compreJunto__produto-principal">
+
+                </div>
+                <div class="compreJunto__plus">
+                    +
+                </div>
+                <div class="compreJunto__produto-compreJunto">
+                    <vtex.cmc:BuyTogether />
+                </div>
+                <div class="compreJunto__equal">
+                    =
+                </div>
+            </div>
+        </article>
+        <!-- Estrutura para detalhes do produto -->
+
+        <article class="container detalhes-prod">
+            <!-- Estrutura descricao produto -->
+            <section class="detalhes-prod__descriptions">
+                <vtex.cmc:ProductDescription />
+            </section>
+
+            <section class="detalhes-prod__specifications">
+                <vtex.cmc:productSpecification />
+            </section>
+
+        </article>
+
+        <!-- Estrutura de Quem viu, viu tbm -->
+
+        <article class="container-center prateleira">
+            <section class="prateleira__titles">
+                <h4 class="prateleira__title"> Titulo prateleira </h4>
+            </section>
+            <nav class="prateleira__shelve-template">
+                <vtex:contentPlaceHolder id="{{loja}}-prateleira01" />
+            </nav>
+        </article>
+
+    </main>
+
+    <!-- Chamada para o rodapé -->
+
+    <vtex:template id="{{loja}}-footer" />
+
+    <!-- Chamada para os scripts Js da {{loja}} -->
+
+    <vtex:template id="{{loja}}-scripts" />
+
+</body>
+
+</html>

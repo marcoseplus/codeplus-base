@@ -1,0 +1,172 @@
+/* breadcrumb */
+.breadcrumb-wrapper {
+    float: left;
+    width: 100%;
+    text-align: left;
+    margin: 20px 0;
+}
+.bread-crumb ul {
+    margin: 0;
+    text-align: center;
+}
+.bread-crumb ul li {
+    display: inline-block;
+    margin-right: 13px;
+    vertical-align: top;
+    float: left;
+    list-style: none;
+}
+.bread-crumb ul li a {
+    color: #000;
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: none; 
+}
+.bread-crumb ul li a[title=AMBIENTEDALOJA] {
+    font-weight: 700;
+    color: #8c8c8c;
+}
+.bread-crumb ul li a[title=AMBIENTEDALOJA], .loja-produto .bread-crumb ul li:first-of-type a {
+    font-size: 0;
+}
+.bread-crumb ul li::after {
+    content: "/";
+    color: #000;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+    margin: 4px 0 0 9px;
+    font-weight: 400;
+}
+.bread-crumb ul li.last::after {
+    display: none;
+}
+.bread-crumb ul li strong {
+    font-weight: 700;
+}
+/* breadcrumb [end] */
+
+/* institucional */
+
+.inst .institucional-content {
+    padding: 0px;
+    min-height: 400px;
+    width: 73%;
+    margin: 35px 0px 50px 0px;
+    float: left;
+}
+
+.inst .sidebar {
+    width: 27%;
+    padding: 0px 50px 0px 0px;
+    float: left;
+    margin: 35px 0px 0px 0px;
+}
+
+.inst ul.menuLat {
+    width: 100%;
+    margin: 0px;
+}
+
+.inst ul.menuLat::before {
+    float: left;
+    width: 100%;
+    color: #000;
+    text-transform: uppercase;
+    line-height: 100%;
+    margin: 0px 0px 20px 0px;
+    font-size: 28px;
+    font-weight: 700;
+    content: "Navegue";
+}
+
+.inst ul.menuLat li {
+    float: left;
+    width: 100%;
+    line-height: 100%;
+    list-style: none;
+    display: block;
+    margin: 0 0 10px 0;
+}
+
+.inst ul.menuLat li a {
+    float: left;
+    width: 100%;
+    line-height: 100%;
+    border: 1px solid #ececec;
+    background: #fff;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 12px;
+    font-weight: 600;
+    font-size: 15px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.inst ul.menuLat li a:hover {
+    padding-left: 19px;
+    border-left: 5px solid #b0934e;
+    text-decoration: none;
+    color: #000;
+}
+
+.inst .institucional-content.col-sm-8 h1 {
+	float: left;
+	width: 100%;
+	color: #000;
+	text-transform: uppercase;
+	line-height: 100%;
+	margin: 4px 0px 20px 0px;
+	font-size: 28px;
+	font-weight: 700;
+}
+
+.inst .institucional-content.col-sm-8 h2 {
+	float: left;
+	width: 100%;
+	text-transform: uppercase;
+	margin: 17px 0px 7px 0px;
+	font-size: 17px;
+	color: #000;
+	font-weight: 700;
+	letter-spacing: 0px;
+}
+
+.inst .institucional-content.col-sm-8 h3 {
+    float: left;
+    width: 100%;
+    text-transform: uppercase;
+    margin: 10px 0px 7px 0px;
+    font-size: 16px;
+    color: #858585;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.inst .institucional-content.col-sm-8 p {
+	float: left;
+	width: 100%;
+	margin: 0px 0px 15px 0px;
+	font-size: 15px;
+	line-height: 150%;
+    color: #000;
+}
+
+/**aqui colocar os nomes dos body-class para dar efeito*/
+.inst.entregas .menuLat li#linkInstFrete a,
+.inst.pgto .menuLat li#linkInstPgto a,
+.inst.trocas .menuLat li#linkInstTrocas a,
+.inst.fale-com .menuLat li#linkInstFale a,
+.inst.cookies .menuLat li#linkInstCookie a,
+.inst.priv .menuLat li#linkInstPriv a {
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #b0934e;
+    border-left: 5px solid #b0934e;
+}
+/* institucional [end] */

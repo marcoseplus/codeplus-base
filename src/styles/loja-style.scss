@@ -1,0 +1,27 @@
+@import 'base/font.scss';
+@import 'base/variables.scss';
+@import 'base/mixins.scss';
+@import 'base/reset.scss';
+
+@import 'layout/footer.scss';
+@import 'layout/header.scss';
+@import 'layout/middle.scss';
+@import 'layout/main.scss';
+
+@import 'modules/autocomplete.scss';
+@import 'modules/breadCrumb.scss';
+@import 'modules/buscaAvancada.scss';
+@import 'modules/prateleira.scss';
+
+@import 'pages/login.scss';
+@import 'pages/account.scss';
+@import 'pages/busca-vazia.scss';
+@import 'pages/departamento.scss';
+@import 'pages/home.scss';
+@import 'pages/institucional.scss';
+@import 'pages/produto.scss';
+
+@import 'themes/default.scss';
+
+@import 'vendors/slick-changes.scss';
+
