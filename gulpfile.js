@@ -19,7 +19,8 @@ const clean         = require('gulp-clean') //Deleta diretorios ou arquivos
 
 const config = {
     nickName: 'SEU_NOME',
-    accountName: 'SEU_NOME'
+    accountName: 'SEU_NOME',
+    hostName: 'plusacademy'
 }
 
 const paths = {
@@ -89,11 +90,26 @@ gulp.task('script-dev', function () {
         .pipe(gulp.dest(paths.scripts.dest))
 })
 
+gulp.task('browserSyncProxy', function () {
+    return browserSync.init({
+        open: false,
+        watch: true,
+        https: config.https || true,
+        host: config.hostName + '.vtexlocal.com.br',
+        startPath: '/codeplus/' + config.accountName,
+        proxy: 'https://' + config.hostName + '.vtexcommercestable.com.br',
+        serveStatic: [{
+            route: '/arquivos',
+            dir: ['./build/arquivos']
+        }]
+    })
+})
+
 
 const watchDev = () => {
 	gulp.watch(paths.styles.src, gulp.series('style-dev')).on('change', browserSync.reload)
 	gulp.watch(paths.scripts.src, gulp.series('script-dev')).on('change', browserSync.reload)
 }
 
-gulp.task('dev', gulp.parallel( 'style-dev', 'script-dev', watchDev));
+gulp.task('dev', gulp.parallel( 'style-dev', 'script-dev', 'browserSyncProxy', watchDev));
 gulp.task('start', gulp.series( 'templateInit', 'clean-templateInit'));
